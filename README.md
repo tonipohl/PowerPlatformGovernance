@@ -15,6 +15,12 @@ A part of the CoE solution includes Power BI dashobards, as here.
 
 [![link](./images/CoE-Demo-PowerBI-1.png)](./images/CoE-Demo-PowerBI-1.png "Click to enlarge")
 
+There is a lot of information about the components included, such as a list if all apps.
+
+[![link](./images/CoE-Demo-PowerBI-3-Apps.png)](./images/CoE-Demo-PowerBI-3-Apps.png "Click to enlarge")
+
+...and much more. Give it a try.
+
 - Install the  CoE starter kit: [aka.ms/coestarterkit](aka.ms/coestarterkit)
 - Download the CoE starter kit: [aka.ms/coestarterkitdownload](aka.ms/coestarterkitdownload)
 
