@@ -11,6 +11,10 @@ IT Governance helps to to monitor and control key information technology and pro
 
 The CoE allows to monitor and react on activties in the Microsoft Power Platform: "The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate." It´s a helpful tool for your governance projects.
 
+A part of the CoE solution includes Power BI dashobards, as here.
+
+[![link](./images/CoE-Demo-PowerBI-1.png)](./images/CoE-Demo-PowerBI-1.png "Click to enlarge")
+
 - Install the  CoE starter kit: [aka.ms/coestarterkit](aka.ms/coestarterkit)
 - Download the CoE starter kit: [aka.ms/coestarterkitdownload](aka.ms/coestarterkitdownload)
 
