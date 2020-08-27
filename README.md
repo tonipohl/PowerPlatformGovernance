@@ -14,7 +14,7 @@ IT Governance helps to to monitor and control key information technology and pro
 ## More
 
 - Develop your own governance processes with automation, using PowerShell or APIs
-- Check out our https://governancetoolkit365.com/
+- Check out our [GovernanceToolkit365.com](https://governancetoolkit365.com/)
 - Check out other tools such as the [Power Studio for the Power Platform](https://flowstudio.app/) from our MVP colleague John Liu
 
 to be continued...
