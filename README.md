@@ -4,15 +4,17 @@ IT Governance helps to to monitor and control key information technology and pro
 
 ## Administration of the Power Platform
 
-- aka.ms/ppac
+- Microsoft Power Platform Admin Center: [aka.ms/ppac](aka.ms/ppac)
 
 ## Center of Excellence
 
-- Install the  CoE starter kit: aka.ms/coestarterkit
-- Download the CoE starter kit: aka.ms/coestarterkitdownload
+- Install the  CoE starter kit: [aka.ms/coestarterkit](aka.ms/coestarterkit)
+- Download the CoE starter kit: [aka.ms/coestarterkitdownload](aka.ms/coestarterkitdownload)
 
 ## More
 
 - Develop your own governance processes with automation, using PowerShell or APIs
 - Check out our https://governancetoolkit365.com/
-- Check out other tools such as the Power Studio for the Power Platform from our MVP colleague John Liu
+- Check out other tools such as the [Power Studio for the Power Platform](https://flowstudio.app/) from our MVP colleague John Liu
+
+to be continued...
