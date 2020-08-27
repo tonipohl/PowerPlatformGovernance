@@ -1,12 +1,15 @@
 # PowerPlatformGovernance
 
-IT Governance helps to to monitor and control key information technology and processes in an organization. This repository contains presentations and helpful information to control your power platform components in your Microsoft 365 tenant. This repository is a joint project from Peter Hödl, Martina Grom and Toni Pohl from [atwork.at](https://www.atwork-it.com/) and will be extended from time to time with additional information and tools for automating governance tasks in Microsoft 365.
+IT Governance helps to to monitor and control key information technology and processes in an organization. This repository contains presentations and helpful information to control your power platform components in your Microsoft 365 tenant. This repository is a joint project from Peter Hödl, [Martina Grom](https://twitter.com/magrom) and [Toni Pohl](https://twitter.com/atwork) from [atwork.at](https://www.atwork-it.com/) and will be extended from time to time with additional information and tools for automating governance tasks in Microsoft 365.
 
 ## Administration of the Power Platform
 
 - Microsoft Power Platform Admin Center: [aka.ms/ppac](aka.ms/ppac)
+- Activate the Audit Logs in your tenant (link to follow)
 
-## Center of Excellence
+## Center of Excellence (CoE)
+
+The CoE allows to monitor and react on activties in the Microsoft Power Platform: "The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate." It´s a helpful tool for your governance projects.
 
 - Install the  CoE starter kit: [aka.ms/coestarterkit](aka.ms/coestarterkit)
 - Download the CoE starter kit: [aka.ms/coestarterkitdownload](aka.ms/coestarterkitdownload)
