@@ -24,6 +24,20 @@ There is a lot of information about the components included, such as a list if a
 - Install the  CoE starter kit: [aka.ms/coestarterkit](aka.ms/coestarterkit)
 - Download the CoE starter kit: [aka.ms/coestarterkitdownload](aka.ms/coestarterkitdownload)
 
+## Develop a Power App
+
+- See the helpful formula help: [Formula reference for Power Apps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference)
+  
+## Develop a custom connector
+
+- See [Get started with Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-3.1&tabs=visual-studio)
+- [Create and deploy an ASP.NET web app to Azure](https://docs.microsoft.com/en-us/connectors/custom-connectors/create-web-api-connector#create-and-deploy-an-aspnet-web-app-to-azure)
+- See this blog post series from Patrick Lamber at [Describe-Your-Custom-Connector-With-An-Swagger](https://www.nubo.eu/Describe-Your-Custom-Connector-With-An-Swagger/)
+
+## Power Virtual Agents
+
+- Create your own chatbot with no code and start at [powerva.microsoft.com](https://powerva.microsoft.com/)
+
 ## More
 
 - Develop your own governance processes with automation, using PowerShell or APIs
