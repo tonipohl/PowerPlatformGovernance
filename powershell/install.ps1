@@ -1,5 +1,9 @@
 #-----------------------------------------------------
 # install.ps1
+# Note: PowerShell in this topic requires PowerShell version 5.x. 
+# To check the version of PowerShell running on your machine, run the following command:
+# $PSVersionTable.PSVersion
+# https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell
 #-----------------------------------------------------
 
 # https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell
@@ -15,6 +19,7 @@ Install-Module Microsoft.PowerApps.Checker.PowerShell
 
 # check the latest installed version with
 Get-InstalledModule -Name Microsoft.PowerApps.Administration.PowerShell, Microsoft.PowerApps.PowerShell
-# 2.0.76     Microsoft.PowerApps.Administrati... PSGallery
-# 1.0.13     Microsoft.PowerApps.PowerShell      PSGallery
+# Current version (June 2021)
+# 2.0.126    Microsoft.PowerApps.Administrati... PSGallery
+# 1.0.20     Microsoft.PowerApps.PowerShell      PSGallery
 

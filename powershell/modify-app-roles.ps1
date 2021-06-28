@@ -1,5 +1,6 @@
 #-----------------------------------------------------
 # modify-app-roles.ps1
+# Some cmdlets to run after a successful login
 #-----------------------------------------------------
 Get-AdminPowerAppEnvironment | ft
 
