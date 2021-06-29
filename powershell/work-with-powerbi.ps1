@@ -1,26 +1,12 @@
 #-----------------------------------------------------
 # work-with-powerbi.ps1
+# Some cmdlets to run after a successful login
 #-----------------------------------------------------
-# https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
-
-# Install-Module -Name MicrosoftPowerBIMgmt
-# or update
-# Update-Module -Name MicrosoftPowerBIMgmt
-
-# Important tip:
-# https://github.com/microsoft/powerbi-powershell/issues/60
-# I can run using PowerShell 7.1.0,  I have never been able to run in in Powershell 5.
-
+# https://community.powerbi.com/t5/Service/Offline-installation-of-PowerBI-PowerShell-Module/m-p/1238245
 Import-Module -Name MicrosoftPowerBIMgmt
 
-Get-Module MicrosoftPowerBI* -ListAvailable
-
-# https://github.com/microsoft/powerbi-powershell/issues/60
-Get-Module MicrosoftPowerBIMgmt* -ListAvailable | Uninstall-Module -Force
-Install-Module MicrosoftPowerBIMgmt
-Resolve-PowerBIError -Last
-
-# Connect, or use aliases: Login-PowerBIServiceAccount, Login-PowerBI
+# https://docs.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount?view=powerbi-ps
+# Connect (you can use aliases: Login-PowerBIServiceAccount, Login-PowerBI)
 Connect-PowerBIServiceAccount
 
 # Get all my workspaces (or just the first ones)

@@ -1,6 +1,15 @@
 #-----------------------------------------------------
 # work-with-powerapps.ps1
 #-----------------------------------------------------
+
+# Ask for credentials
+Add-PowerAppsAccount
+
+# Alternatively: Here is how you can pass in credentials (avoiding opening a prompt) - works only without MFA!
+# $pass = ConvertTo-SecureString "password" -AsPlainText -Force
+# Add-PowerAppsAccount -Username foo@bar.com -Password $pass
+
+# Get the environments
 Get-AdminPowerAppEnvironment | ft
 
 #$environment = Get-AdminPowerAppEnvironment -Default
