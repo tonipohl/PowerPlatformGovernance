@@ -9,8 +9,7 @@ Get-AdminPowerAppEnvironment | ft
 $environment = Get-AdminPowerAppEnvironment -EnvironmentName 'a123...'
 
 # $environmentid = $environment.Internal.id
-# We need to extract the ID only from 
-# "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/Default-<someid>"
+# If you need to extract the ID only from "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/Default-<someid>"
 $environmentid = $environment.Internal.id.split("/")[-1]
 Write-Output "Environment ID: $environmentid"
 
@@ -31,7 +30,7 @@ Get-AdminPowerApp -AppName $myapp.AppName -EnvironmentName $environmentid `
     | ft
 
 # Add a user. We need the UserID from Azure AD.
-$userid = "c456..."
+$userid = "123456..."
 
 # Add permissions to an app = Share the app. The user gets an email if -Notify $true (default)
 Set-AdminPowerAppRoleAssignment -PrincipalType Group -PrincipalObjectId $userid -RoleName CanEdit `
@@ -41,7 +40,7 @@ Set-AdminPowerAppRoleAssignment -PrincipalType Group -PrincipalObjectId $userid 
 Set-AdminPowerAppOwner -AppName $myapp.AppName -AppOwner $userid -EnvironmentName $environmentid
 
 # Remove a user
-$removeuserid = "d789..."
+$removeuserid = "6789..."
 Remove-AdminPowerAppRoleAssignment -RoleId $removeuserid -EnvironmentName $environmentid -AppName $myapp.AppName
 
 # Check it

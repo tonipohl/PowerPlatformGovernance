@@ -5,11 +5,11 @@ IT Governance helps to to monitor and control key information technology and pro
 ## Administration of the Power Platform
 
 - Microsoft Power Platform Admin Center: [aka.ms/ppac](https://aka.ms/ppac)
-- Activate the Unified Audit Log in your tenant:  [aka.ms/Security-and-Compliance](https://aka.ms/Security-and-Compliance). See more at https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance. **Note:** It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search.
+- Activate the Unified Audit Log in your tenant: [aka.ms/Security-and-Compliance](https://aka.ms/Security-and-Compliance). See more at https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance. **Note:** It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search.
 
 ## Use PowerShell for Power Apps and Power Automate
 
-PowerShell in this topic requires Windows PowerShell version 5.x. To check the version of PowerShell running on your machine, run the following command:
+Note: Earlier, the Power Platform modules required Windows PowerShell version 5.x. This is no longer required, now PowerShell Core is supported as well. To check the version of the PowerShell version running on your machine, run the following command:
 
 ~~~powershell
 $PSVersionTable.PSVersion
@@ -18,7 +18,7 @@ $PSVersionTable.PSVersion
 See more at https://docs.microsoft.com/en-us/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest
 
 ~~~powershell
-# Install the modules from the PowerShell Gallery in Windows PowerShell 5.1
+# Install the modules from the PowerShell Gallery
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
 # Install-Module -Name Microsoft.PowerApps.Checker.PowerShell
