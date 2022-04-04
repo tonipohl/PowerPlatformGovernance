@@ -1,0 +1,150 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Create_HTML_table": {
+                "inputs": {
+                    "format": "HTML",
+                    "from": "@variables('table')"
+                },
+                "runAfter": {
+                    "For_each": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "Table"
+            },
+            "For_each": {
+                "actions": {
+                    "Append_to_array_variable": {
+                        "inputs": {
+                            "name": "table",
+                            "value": {
+                                "created": "@{coalesce(items('For_each')?['createdon'],'','')}",
+                                "description": "@{coalesce(items('For_each')?['admin_flowdescription'],'','')}",
+                                "environment": "@{coalesce(items('For_each')?['admin_flowenvironmentdisplayname'],'','')}",
+                                "id": "@{coalesce(items('For_each')?['admin_flowid'],'','')}",
+                                "name": "@{coalesce(items('For_each')?['admin_displayname'],'','')}"
+                            }
+                        },
+                        "runAfter": {},
+                        "type": "AppendToArrayVariable"
+                    }
+                },
+                "foreach": "@body('List_rows')?['value']",
+                "runAfter": {
+                    "List_rows": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "Foreach"
+            },
+            "Initialize_variable": {
+                "inputs": {
+                    "variables": [
+                        {
+                            "name": "table",
+                            "type": "array"
+                        }
+                    ]
+                },
+                "runAfter": {},
+                "type": "InitializeVariable"
+            },
+            "List_rows": {
+                "inputs": {
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['commondataservice']['connectionId']"
+                        }
+                    },
+                    "method": "get",
+                    "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('https://<yourorgid>.crm4.dynamics.com'))}/tables/@{encodeURIComponent(encodeURIComponent('admin_flows'))}/items"
+                },
+                "runAfter": {
+                    "Initialize_variable": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "ApiConnection"
+            },
+            "Send_an_email_(V2)": {
+                "inputs": {
+                    "body": {
+                        "Body": "<p>@{body('Create_HTML_table')}</p>",
+                        "Subject": "CoE Report Flows",
+                        "To": "<youremail>"
+                    },
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['office365']['connectionId']"
+                        }
+                    },
+                    "method": "post",
+                    "path": "/v2/Mail"
+                },
+                "runAfter": {
+                    "Create_HTML_table": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "ApiConnection"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "parameters": {
+            "$connections": {
+                "defaultValue": {},
+                "type": "Object"
+            }
+        },
+        "triggers": {
+            "Recurrence": {
+                "evaluatedRecurrence": {
+                    "frequency": "Week",
+                    "interval": 1,
+                    "schedule": {
+                        "hours": [
+                            "4"
+                        ],
+                        "weekDays": [
+                            "Monday"
+                        ]
+                    },
+                    "timeZone": "W. Europe Standard Time"
+                },
+                "recurrence": {
+                    "frequency": "Week",
+                    "interval": 1,
+                    "schedule": {
+                        "hours": [
+                            "4"
+                        ],
+                        "weekDays": [
+                            "Monday"
+                        ]
+                    },
+                    "timeZone": "W. Europe Standard Time"
+                },
+                "type": "Recurrence"
+            }
+        }
+    },
+    "parameters": {
+        "$connections": {
+            "value": {
+                "commondataservice": {
+                    "connectionId": "<connection>",
+                    "connectionName": "commondataservice",
+                    "id": "<resourceid>"                    
+                },
+                "office365": {
+                    "connectionId": "<connection>",
+                    "connectionName": "office365",
+                    "id": "<resourceid>"                      
+                }
+            }
+        }
+    }
+}
