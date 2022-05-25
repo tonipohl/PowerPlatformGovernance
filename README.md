@@ -19,8 +19,8 @@ See more at https://docs.microsoft.com/en-us/powershell/powerapps/get-started-po
 
 ~~~powershell
 # Install the modules from the PowerShell Gallery
-Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
-Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
+Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Scope CurrentUser
+Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
 # Install-Module -Name Microsoft.PowerApps.Checker.PowerShell
 # Check the latest version
 Get-InstalledModule -Name Microsoft.PowerApps.Administration.PowerShell, Microsoft.PowerApps.PowerShell
@@ -34,7 +34,7 @@ The Power BI modules run in Windows PowerShell and in PowerShell core (v7.x). Yo
 
 ~~~powershell
 # Install the modules from the PowerShell Gallery
-Install-Module -Name MicrosoftPowerBIMgmt
+Install-Module -Name MicrosoftPowerBIMgmt -Scope CurrentUser
 # Check the latest version
 Get-InstalledModule -Name MicrosoftPowerBIMgmt
 ~~~
