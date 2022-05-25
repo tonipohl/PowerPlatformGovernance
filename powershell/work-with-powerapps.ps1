@@ -41,7 +41,11 @@ Get-AdminPowerApp -AppName $myapp.AppName -EnvironmentName $environmentid `
     | ft
 
 # Add a user. We need the UserID from Azure AD.
-$userid = "<userid>"
+# $userid = "<userid>"
+
+# or lookup the signed-in user:
+# $myuser = Get-AzADUser -SignedIn
+# $userid = $myuser.Id
 
 # Add permissions to an app = Share the app. The user gets an email if -Notify $true (default)
 Set-AdminPowerAppRoleAssignment -PrincipalType Group -PrincipalObjectId $userid -RoleName CanEdit `
