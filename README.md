@@ -7,6 +7,12 @@ IT Governance helps to to monitor and control key information technology and pro
 - Microsoft Power Platform Admin Center: [aka.ms/ppac](https://aka.ms/ppac)
 - Activate the Unified Audit Log in your tenant: [aka.ms/Security-and-Compliance](https://aka.ms/Security-and-Compliance). See more at https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance. **Note:** It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search.
 
+## Backup and Restore Flows
+
+Update August 2022: Find a Backup1Flow and Restore1Flow in the (./Flows) directory. These flows allow to create a backup of a flow to a SharePoint document library and to restore the saved flow in the same environment if needed with the restore flow.  
+
+See more at the article at (https://blog.atwork.at/post/backup-and-restore-a-flow-with-another-flow).  
+
 ## Use PowerShell for Power Apps and Power Automate
 
 Note: Earlier, the Power Platform modules required Windows PowerShell version 5.x. This is no longer required, now PowerShell Core is supported as well. To check the version of the PowerShell version running on your machine, run the following command:
