@@ -9,9 +9,9 @@ IT Governance helps to to monitor and control key information technology and pro
 
 ## Backup and Restore Flows
 
-Update August 2022: Find a Backup1Flow and Restore1Flow in the (./Flows) directory. These flows allow to create a backup of a flow to a SharePoint document library and to restore the saved flow in the same environment if needed with the restore flow.  
+Update August 2022: Find a Backup1Flow and Restore1Flow in the [Flows](./Flows) directory. These flows allow to create a backup of a flow to a SharePoint document library and to restore the saved flow in the same environment if needed with the restore flow.  
 
-See more at the article at (https://blog.atwork.at/post/backup-and-restore-a-flow-with-another-flow).  
+For more information, see the article at [blog.atwork.at](https://blog.atwork.at/post/backup-and-restore-a-flow-with-another-flow).  
 
 ## Use PowerShell for Power Apps and Power Automate
 
