@@ -1,5 +1,6 @@
 #-----------------------------------------------------
-# modify-environment-owner.ps1
+# 13-powerapps-modify-environment-owner.ps1
+# atwork.at, Toni Pohl
 #-----------------------------------------------------
 # https://o365withlalit.wordpress.com/2020/07/01/change-ownership-of-powerapps/
 

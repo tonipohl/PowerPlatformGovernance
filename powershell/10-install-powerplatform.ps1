@@ -1,5 +1,6 @@
 #-----------------------------------------------------
-# install-powerplatform.ps1
+# 10-install-powerplatform.ps1
+# atwork.at, Toni Pohl
 # Note: PowerShell in this topic requires PowerShell version 5.x. 
 # To check the version of PowerShell running on your machine, run the following command:
 # $PSVersionTable.PSVersion

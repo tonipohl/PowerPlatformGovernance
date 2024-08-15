@@ -47,6 +47,8 @@ Get-InstalledModule -Name MicrosoftPowerBIMgmt
 
 **Note:** To automate, such PowerShell scripts can be executed in Microsoft Azure in an Azure Automation Account , or in an Azure Function v3 environment.
 
+**Access with SPN:** Power BI also supports authentication with a Service principal to let a Microsoft Entra application access Microsoft Fabric content and APIs. The app must not have any admin-consent required permissions for Power BI set on it in the Azure portal. Service principals can access the /admin APIs in a read-only mode if enabled, such as https://api.powerbi.com/v1.0/myorg/admin/[method]. Follow the steps described at [Enable service principal authentication for read-only admin APIs](https://learn.microsoft.com/en-us/fabric/admin/) and the available endpoints at [Power BI REST APIs - Admin](https://learn.microsoft.com/en-us/rest/api/power-bi/admin). Find out more in the [Power BI developer documentation](https://learn.microsoft.com/en-us/power-bi/developer/).  
+
 ## Center of Excellence (CoE)
 
 The CoE allows to monitor and react on activities in the Microsoft Power Platform: "The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate." It´s a helpful tool for your governance projects.

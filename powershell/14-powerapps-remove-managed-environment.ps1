@@ -1,5 +1,6 @@
 #-----------------------------------------------------
-# remove-managed-environment.ps1
+# 14-powerapps-remove-managed-environment.ps1
+# atwork.at, Toni Pohl
 #-----------------------------------------------------
 # Disable a Managed Environment using PowerShell step-by-step (mostly used because of license requirements).
 # Admins can use PowerShell to remove the Managed Environments property on an environment. The environment must not be using any Managed Environments capabilities.

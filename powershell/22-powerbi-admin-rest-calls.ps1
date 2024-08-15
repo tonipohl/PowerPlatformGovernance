@@ -1,5 +1,6 @@
 #-----------------------------------------------------
-# work-with-powerbi-rest.ps1
+# 22-powerbi-admin-rest-calls.ps1
+# atwork.at, Toni Pohl
 # Some API calls to run after a successful login
 #-----------------------------------------------------
 

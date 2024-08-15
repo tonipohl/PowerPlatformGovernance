@@ -1,5 +1,6 @@
 #-----------------------------------------------------
-# modify-app-roles.ps1
+# 12-powerapps-modify-app-roles.ps1
+# atwork.at, Toni Pohl
 # Some cmdlets to run after a successful login
 #-----------------------------------------------------
 Get-AdminPowerAppEnvironment | ft

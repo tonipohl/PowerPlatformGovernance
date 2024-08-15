@@ -1,5 +1,6 @@
 #-----------------------------------------------------
-# install-powerbi.ps1
+# 20-install-powerbi.ps1
+# atwork.at, Toni Pohl
 # Note: PowerShell in this topic requires PowerShell Core 7.x. 
 # To check the version of PowerShell running on your machine, run the following command:
 # $PSVersionTable.PSVersion
