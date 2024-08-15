@@ -1,9 +1,11 @@
 #-----------------------------------------------------
 # 20-install-powerbi.ps1
 # atwork.at, Toni Pohl
-# Note: PowerShell in this topic requires PowerShell Core 7.x. 
+# Note: PowerShell in this topic requires PowerShell Core 7. 
 # To check the version of PowerShell running on your machine, run the following command:
 # $PSVersionTable.PSVersion
+# See the path of the installed modules with:
+# $env:PSModulePath
 #-----------------------------------------------------
 
 # https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
@@ -20,12 +22,16 @@ MicrosoftPowerBIMgmt.Workspaces
 #>
 
 # Check the latest installed version with
+Get-InstalledModule -Name MicrosoftPowerBIMgmt
+
+# Current version (August 2024)
+# 1.2.1111             MicrosoftPowerBIMgmt                PSGallery 
+
+# If needed:
+# Update-Module -Name MicrosoftPowerBIMgmt -Scope CurrentUser
+
+# Check the latest installed version with
 Get-Module MicrosoftPowerBI* -ListAvailable
-
-# $env:PSModulePath
-
-# Current version (June 2021)
-# 1.2.0      MicrosoftPowerBIMgmt                PSGallery
 
 # Notes: If you run into this issue:
 # https://github.com/microsoft/powerbi-powershell/issues/60
