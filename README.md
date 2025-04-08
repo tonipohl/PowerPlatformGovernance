@@ -1,6 +1,6 @@
 # PowerPlatformGovernance
 
-IT Governance helps to to monitor and control key information technology and processes in an organization. This repository contains presentations and helpful information to control your power platform components in your Microsoft 365 tenant. This repository is a joint project from Peter Hödl, [Martina Grom](https://www.linkedin.com/in/martinagrom/), [Toni Pohl](https://www.linkedin.com/in/tonipohl/), and [Christoph Wilfing](https://www.linkedin.com/in/christoph-wilfing-27983258/) from [atwork.at](https://www.atwork-it.com/) and will be extended from time to time with additional information and tools for automating governance tasks in Microsoft 365.
+IT Governance helps to to monitor and control key information technology and processes in an organization. This repository contains presentations and helpful information to control your power platform components in your Microsoft 365 tenant. This repository is a joint project from [Peter Hödl](https://www.linkedin.com/in/peter-h%C3%B6dl/), [Martina Grom](https://www.linkedin.com/in/martinagrom/), [Toni Pohl](https://www.linkedin.com/in/tonipohl/), and [Christoph Wilfing](https://www.linkedin.com/in/christoph-wilfing-27983258/) from [atwork.at](https://www.atwork-it.com/) and will be extended from time to time with additional information and tools for automating governance tasks in Microsoft 365.
 
 ## Administration of the Power Platform
 
