@@ -14,7 +14,7 @@ Connect-PowerBIServiceAccount
 Get-PowerBIWorkspace -First 10 | fl
 Get-PowerBIWorkspace -All | ft
 
-$workspaceid = "<someid>"
+$workspaceid = "<your-workspaceid>"
 
 # Get all workspaces as Admin:
 Get-PowerBIWorkspace -Scope Organization -All | ft
@@ -29,4 +29,4 @@ Get-PowerBIReport -WorkspaceId $workspaceid
 Get-PowerBIReport -Scope Organization
 
 # Add a new user to a workspace
-# Add-PowerBIWorkspaceUser -Scope Organization -Id <someid> -UserEmailAddress john@contoso.com -AccessRight Admin
+# Add-PowerBIWorkspaceUser -Scope Organization -Id <your-workspaceid> -UserEmailAddress john@contoso.com -AccessRight Admin

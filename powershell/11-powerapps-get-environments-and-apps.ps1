@@ -15,12 +15,12 @@ Get-AdminPowerAppEnvironment | ft
 
 #$environment = Get-AdminPowerAppEnvironment -Default
 # Get "Dev Environment"
-$environment = Get-AdminPowerAppEnvironment -EnvironmentName '<someid>'
+$environment = Get-AdminPowerAppEnvironment -EnvironmentName '<your-environmentid>'
 $environment
 
 # $environmentid = $environment.Internal.id
 # We need to extract the ID only from 
-# "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/Default-<someid>"
+# "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/Default-<your-environmentid>"
 $environmentid = $environment.Internal.id.split("/")[-1]
 Write-Output "Environment ID: $environmentid"
 

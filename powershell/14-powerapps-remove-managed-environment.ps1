@@ -18,7 +18,7 @@ $allenv = Get-AdminPowerAppEnvironment
 $allenv | ft
 
 # Find the Id of the environment...
-$environment = Get-AdminPowerAppEnvironment -EnvironmentName '<YOUR-ENVIRONMENT>'
+$environment = Get-AdminPowerAppEnvironment -EnvironmentName '<your-environmentname>'
 $environmentid = $environment.EnvironmentName
 $environmentid
 

@@ -20,7 +20,7 @@ Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Scope Curren
 Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
 # https://docs.microsoft.com/en-us/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest
 # "This module is for solution developers to perform rich static analysis checks on their solutions against a set of best practice rules to quickly identify problematic patterns."
-Install-Module -Name Microsoft.PowerApps.Checker.PowerShell
+Install-Module -Name Microsoft.PowerApps.Checker.PowerShell -Scope CurrentUser
 
 # If needed:
 # Update-Module -Name Microsoft.PowerApps.Administration.PowerShell -Scope CurrentUser
@@ -33,6 +33,6 @@ Install-Module -Name Microsoft.PowerApps.Checker.PowerShell
 # Check the latest installed version with
 Get-InstalledModule -Name Microsoft.PowerApps.Administration.PowerShell, Microsoft.PowerApps.PowerShell
 
-# Current version (August 2024)
-# 2.0.193              Microsoft.PowerApps.Administration… PSGallery 
+# Current version (April 2025)
+# 2.0.209              Microsoft.PowerApps.Administration… PSGallery 
 # 1.0.40               Microsoft.PowerApps.PowerShell      PSGallery
