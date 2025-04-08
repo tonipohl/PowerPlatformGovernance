@@ -1,6 +1,6 @@
 # PowerPlatformGovernance
 
-IT Governance helps to to monitor and control key information technology and processes in an organization. This repository contains presentations and helpful information to control your power platform components in your Microsoft 365 tenant. This repository is a joint project from Peter Hödl, [Martina Grom](https://twitter.com/magrom), [Toni Pohl](https://twitter.com/atwork), and [Christoph Wilfing](https://twitter.com/CWilfing) from [atwork.at](https://www.atwork-it.com/) and will be extended from time to time with additional information and tools for automating governance tasks in Microsoft 365.
+IT Governance helps to to monitor and control key information technology and processes in an organization. This repository contains presentations and helpful information to control your power platform components in your Microsoft 365 tenant. This repository is a joint project from Peter Hödl, [Martina Grom](https://www.linkedin.com/in/martinagrom/), [Toni Pohl](https://www.linkedin.com/in/tonipohl/), and [Christoph Wilfing](https://www.linkedin.com/in/christoph-wilfing-27983258/) from [atwork.at](https://www.atwork-it.com/) and will be extended from time to time with additional information and tools for automating governance tasks in Microsoft 365.
 
 ## Administration of the Power Platform
 
@@ -9,13 +9,11 @@ IT Governance helps to to monitor and control key information technology and pro
 
 ## Backup and Restore Flows
 
-Update August 2022: Find a Backup1Flow and Restore1Flow in the [Flows](./Flows) directory. These flows allow to create a backup of a flow to a SharePoint document library and to restore the saved flow in the same environment if needed with the restore flow.  
-
-For more information, see the article at [blog.atwork.at](https://blog.atwork.at/post/backup-and-restore-a-flow-with-another-flow).  
+Find a Backup1Flow and Restore1Flow in the [Flows](./Flows) directory. These flows allow to create a backup of a flow to a SharePoint document library and to restore the saved flow in the same environment if needed with the restore flow. For more information, see the article at [blog.atwork.at](https://blog.atwork.at/post/backup-and-restore-a-flow-with-another-flow).  
 
 ## Use PowerShell for Power Apps and Power Automate
 
-Note: Earlier, the Power Platform modules required Windows PowerShell version 5.x. This is no longer required, now PowerShell Core is supported as well. To check the version of the PowerShell version running on your machine, run the following command:
+Note: Earlier, the Power Platform modules required Windows PowerShell version 5.x. This is no longer required, now PowerShell Core 7.x is supported as well. To check the version of the PowerShell version running on your machine, run the following command:
 
 ~~~powershell
 $PSVersionTable.PSVersion
@@ -36,7 +34,7 @@ Get-InstalledModule -Name Microsoft.PowerApps.Administration.PowerShell, Microso
 
 ## Use PowerShell for Power BI
 
-The Power BI modules run in Windows PowerShell and in PowerShell core (v7.x). You can install them from the PowerShell Gallery.
+The Power BI modules run in Windows PowerShell and in PowerShell core 7.x. You can install them from the PowerShell Gallery.
 
 ~~~powershell
 # Install the modules from the PowerShell Gallery
@@ -65,6 +63,7 @@ There is a lot of information about the components included, such as a list of a
 
 - Install the  CoE starter kit: [aka.ms/coestarterkit](aka.ms/coestarterkit)
 - Download the CoE starter kit: [aka.ms/coestarterkitdownload](aka.ms/coestarterkitdownload)
+- See and get the latest releases: (https://github.com/microsoft/coe-starter-kit/releases)
 
 ## Develop a Power App
 
@@ -76,9 +75,18 @@ There is a lot of information about the components included, such as a list of a
 - [Create and deploy an ASP.NET web app to Azure](https://docs.microsoft.com/en-us/connectors/custom-connectors/create-web-api-connector#create-and-deploy-an-aspnet-web-app-to-azure)
 - See this blog post series from Patrick Lamber at [Describe-Your-Custom-Connector-With-An-Swagger](https://www.nubo.eu/Describe-Your-Custom-Connector-With-An-Swagger/)
 
-## Power Virtual Agents
+## Copilot Agents
 
-- Create your own chatbot with no code and start at [powerva.microsoft.com](https://powerva.microsoft.com/)
+We are now in the transformative era of AI and M365 Copilot, where technology seamlessly integrates into our daily tasks. Discover some resources available to enhance your experience here.
+
+- [Technical Readiness guide](https://aka.ms/Copilot/TechnicalReadinessGuide)
+- [Set up Microsoft 365 Copilot](https://setup.cloud.microsoft/microsoft-365-copilot/setup-guide)
+- Create your own agents with no code and start at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com/)
+- [Microsoft Copilot Scenario Library ](https://adoption.microsoft.com/copilot-scenario-library/)
+- [Microsoft Copilot Scenario PPT Library downloads](https://transform.microsoft.com/copilot-scenarios)
+- [Copilot Scenario Library downloads](https://adoption.microsoft.com/copilot-scenario-library/downloads/)
+- [Microsoft 365 Copilot | Copilot Studio agent builder](https://www.youtube.com/watch?v=uo-vCFL96yQ)
+- [Securing data in an AI-first world with Microsoft Purview](https://techcommunity.microsoft.com/blog/securitycopilotblog/securing-data-in-an-ai-first-world-with-microsoft-purview/3981279)
 
 ## More
 
@@ -86,5 +94,4 @@ There is a lot of information about the components included, such as a list of a
 - Check out our [GovernanceToolkit365.com](https://governancetoolkit365.com/)
 - Check out other tools such as the [Power Studio for the Power Platform](https://flowstudio.app/) from our MVP colleague John Liu
 
-to be continued...
-
+We hope the resources here help for your M365 governance journey.
