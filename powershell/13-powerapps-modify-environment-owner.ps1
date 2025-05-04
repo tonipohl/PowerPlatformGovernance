@@ -1,8 +1,9 @@
 #-----------------------------------------------------
 # 13-powerapps-modify-environment-owner.ps1
 # atwork.at, Toni Pohl
-#-----------------------------------------------------
+# Some cmdlets to run after a successful login
 # https://o365withlalit.wordpress.com/2020/07/01/change-ownership-of-powerapps/
+#-----------------------------------------------------
 
 Get-AdminPowerAppEnvironment | ft
 
@@ -23,3 +24,5 @@ Write-Output "Environment ID: $environmentid"
 # Sets permissions to an environment
 # https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/set-adminpowerappenvironmentroleassignment?view=pa-ps-latest
 # Set-AdminPowerAppEnvironmentRoleAssignment -EnvironmentName $environmentid -RoleName EnvironmentAdmin -PrincipalType User -PrincipalObjectId [Guid]
+
+# End.

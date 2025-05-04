@@ -1,6 +1,6 @@
-# PowerPlatformGovernance
+# Power Platform and Copilot Governance
 
-IT Governance helps to to monitor and control key information technology and processes in an organization. This repository contains presentations and helpful information to control your power platform components in your Microsoft 365 tenant. This repository is a joint project from [Peter Hödl](https://www.linkedin.com/in/peter-h%C3%B6dl/), [Martina Grom](https://www.linkedin.com/in/martinagrom/), [Toni Pohl](https://www.linkedin.com/in/tonipohl/), and [Christoph Wilfing](https://www.linkedin.com/in/christoph-wilfing-27983258/) from [atwork.at](https://www.atwork-it.com/) and will be extended from time to time with additional information and tools for automating governance tasks in Microsoft 365.
+IT Governance helps to to monitor and control key information technology and processes in an organization. This repository contains presentations and helpful information to control your power platform components in your Microsoft 365 tenant. This repository is a joint project from [Peter Hödl](https://www.linkedin.com/in/peter-h%C3%B6dl/), [Martina Grom](https://www.linkedin.com/in/martinagrom/), [Toni Pohl](https://www.linkedin.com/in/tonipohl/), and [Christoph Wilfing](https://www.linkedin.com/in/christoph-wilfing-27983258/) from [atwork.at](https://www.atwork-it.com/) and will be extended from time to time with additional information and tools for automating governance tasks in the Microsoft 365 platform.
 
 ## Administration of the Power Platform
 
@@ -11,24 +11,11 @@ IT Governance helps to to monitor and control key information technology and pro
 
 Find a Backup1Flow and Restore1Flow in the [Flows](./Flows) directory. These flows allow to create a backup of a flow to a SharePoint document library and to restore the saved flow in the same environment if needed with the restore flow. For more information, see the article at [blog.atwork.at](https://blog.atwork.at/post/backup-and-restore-a-flow-with-another-flow).  
 
-## Use PowerShell for Power Apps and Power Automate
+## Use PowerShell for Power Apps, Power Automate, and more
 
-Note: Earlier, the Power Platform modules required Windows PowerShell version 5.x. This is no longer required, now PowerShell Core 7.x is supported as well. To check the version of the PowerShell version running on your machine, run the following command:
-
-~~~powershell
-$PSVersionTable.PSVersion
-~~~
+Note: Earlier, the Power Platform modules required Windows PowerShell version 5.x. This is no longer required, now PowerShell Core 7.x is supported as well. To check the version of the PowerShell version, and for working with PowerShell modules, see (./powershell/ReadMe.md).
 
 See more at https://docs.microsoft.com/en-us/powershell/powerapps/get-started-powerapps-checker?view=pa-ps-latest
-
-~~~powershell
-# Install the modules from the PowerShell Gallery
-Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Scope CurrentUser
-Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
-# Install-Module -Name Microsoft.PowerApps.Checker.PowerShell
-# Check the latest version
-Get-InstalledModule -Name Microsoft.PowerApps.Administration.PowerShell, Microsoft.PowerApps.PowerShell
-~~~
 
 **Note:** To automate, such PowerShell scripts can be executed in Microsoft Azure in an Azure Automation Account environment.
 
@@ -39,8 +26,6 @@ The Power BI modules run in Windows PowerShell and in PowerShell core 7.x. You c
 ~~~powershell
 # Install the modules from the PowerShell Gallery
 Install-Module -Name MicrosoftPowerBIMgmt -Scope CurrentUser
-# Check the latest version
-Get-InstalledModule -Name MicrosoftPowerBIMgmt
 ~~~
 
 **Note:** To automate, such PowerShell scripts can be executed in Microsoft Azure in an Azure Automation Account , or in an Azure Function v3 environment.

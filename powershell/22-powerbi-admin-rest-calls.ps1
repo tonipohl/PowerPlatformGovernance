@@ -24,3 +24,5 @@ $groups = Invoke-PowerBIRestMethod -Method Get -Url 'groups' | ConvertFrom-Json 
 $groups
 
 # etc.
+
+# End.

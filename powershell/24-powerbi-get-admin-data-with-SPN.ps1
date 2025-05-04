@@ -1,9 +1,8 @@
 #-------------------------------------------
 # 24-powerbi-get-admin-data-with-SPN.ps1
 # atwork.at, Toni Pohl
-#-------------------------------------------
 # Get data from the /admin endpoint with the app token from the previous script.
-
+#-------------------------------------------
 
 # Get workspaces as admin
 # https://learn.microsoft.com/en-us/rest/api/power-bi/admin/groups-get-groups-as-admin#uri-parameters
@@ -16,7 +15,6 @@ $response = Invoke-RestMethod -Method Get -Uri $apiUrl -Headers $headers
 
 $response.value | ft
 
-
 # Get reports as admin
 # https://learn.microsoft.com/en-us/rest/api/power-bi/admin/reports-get-reports-as-admin
 $apiUrl = "https://api.powerbi.com/v1.0/myorg/admin/reports"
@@ -25,3 +23,5 @@ $response = Invoke-RestMethod -Method Get -Uri $apiUrl -Headers $headers
 $response.value | ft
 
 # etc.
+
+# End.

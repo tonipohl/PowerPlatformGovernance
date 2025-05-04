@@ -1,8 +1,8 @@
 #-------------------------------------------
 # 23-powerbi-authenticate-with-SPN.ps1
 # atwork.at, Toni Pohl
-#-------------------------------------------
 # Get an authentication token as app for Power BI REST API
+#-------------------------------------------
 
 <#
 Function:
@@ -11,7 +11,7 @@ Function:
 
 Tasks:
 - Follow the steps at https://learn.microsoft.com/en-us/fabric/admin/metadata-scanning-enable-read-only-apis
-    - Register an Azure AD application in the Azure portal.
+    - Register an Entra ID application in the Azure portal.
     - Do NOT add any permissions to the app: "Make sure the app you use doesn't have any admin-consent required permissions for Power BI set on it in the Azure portal"
     - Get the app's client ID and client secret.
     - Create a new security group (no roles required).
