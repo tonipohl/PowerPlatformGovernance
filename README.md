@@ -76,7 +76,7 @@ We are now in the transformative era of AI and M365 Copilot, where technology se
 ## More
 
 - Develop your own governance processes with automation, using PowerShell or APIs
-- Check out our [GovernanceToolkit365.com](https://governancetoolkit365.com/)
+- Check out our [GovernanceToolkit365.com](https://governancetoolkit365.com/) (GT365)
 - Check out other tools such as the [Power Studio for the Power Platform](https://flowstudio.app/) from our MVP colleague John Liu
 
 We hope the resources here help for your M365 governance journey.
